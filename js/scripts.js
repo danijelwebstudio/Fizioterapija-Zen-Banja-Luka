@@ -228,4 +228,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderCalendar();
     updateSubmitButton();
+    document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll("video");
+
+    videos.forEach(video => {
+        video.muted = true;
+        video.setAttribute("playsinline", "");
+        video.setAttribute("autoplay", "");
+        
+        const tryPlay = () => {
+            video.play().catch(() => {
+                // Autoplay blokiran – pokušavamo ponovo kada je video vidljiv
+                setTimeout(tryPlay, 500);
+            });
+        };
+
+        tryPlay();
+    });
+});
+
+// Kada se korisnik vrati na stranicu (iPhone specifičan bug)
+window.addEventListener("pageshow", function () {
+    document.querySelectorAll("video").forEach(video => {
+        video.play().catch(() => {});
+    });
+});
+
 });
