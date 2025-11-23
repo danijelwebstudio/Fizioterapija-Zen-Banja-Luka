@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Fizioterapija Banja Luka – FizioZen Wellness Studio</title>
+    <meta name="description" content="Ekskluzivni centar za fizioterapiju i rehabilitaciju u Banjoj Luci. Koristimo najmodernije metode za Vaš brzi i potpuni oporavak. Zakažite termin!">
+
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <script src="js/animation.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="top-bar reveal">
+        <div class="container top-bar-content">
+            <div class="contact-info reveal">
+                <span><i class="fas fa-map-marker-alt"></i> Banja Luka, BiH, 78000</span>
+                <span><i class="fas fa-phone"></i> +387 51 123 456</span>
+                <span><i class="fas fa-envelope"></i> kontakt@fiziozen.com</span>
+            </div>
+            <div class="social-links reveal">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+  <header class="main-header rebuild">
+    <div class="container header-content">
+      <div class="logo">FizioZen</div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Početna</a></li>
+          <li><a href="index.html#about" class="nav-link">O Nama</a></li>
+          <li><a href="index.html#services" class="nav-link">Usluge</a></li>
+          <li><a href="index.html#pricing" class="nav-link">Cjenovnik</a></li>
+          <li><a href="#form" class="nav-link active">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#form" class="cta-button primary btn-anim">ZAKAŽITE TERMIN</a>
+                   <!-- NOVI ISPRAVAN HAMBURGER -->
+            <button class="hamburger-btn" aria-label="Otvori meni">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+
+  <div class="mobile-nav-header">
+      <div class="mobile-logo">FizioZen</div>
+      <button class="close-mobile-nav" id="close-mobile-nav">✕</button>
+  </div>
+
+  <ul>
+    <li><a href="index.html#hero">Početna</a></li>
+    <li><a href="index.html#about">O Nama</a></li>
+    <li><a href="index.html#services">Usluge</a></li>
+    <li><a href="index.html#pricing">Cjenovnik</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+  </ul>
+
+</div>
+
+
+</header>
+  </header>
+
+  <!-- HERO -->
+  <section class="contact-hero-section rebuild">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/video2.mp4" type="video/mp4">
+      Tvoj browser ne podržava video background.
+    </video>
+
+    <div class="hero-overlay">
+      <div class="contact-hero-content">
+        <h1 class="hero-title-contact animated-element">Zakaži svoj termin</h1>
+        <p class="hero-subtitle-contact animated-element">
+          Brzo, jednostavno i bez čekanja — izaberi dan i vrijeme koje ti najviše odgovara.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMA -->
+  <section class="booking-section rebuild" id="form">
+    <div class="form-container">
+      <h2 class="animated-element">Zakaži svoj termin</h2>
+      <form id="booking-form" class="animated-element">
+        <div class="form-step step-one">
+          <h3>1. Vaši podaci i usluga</h3>
+          <div class="form-group-grid">
+            <div class="form-group">
+              <label for="name">Ime i prezime</label>
+              <input type="text" id="name" name="name" required placeholder="Unesite svoje ime i prezime">
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Npr. +387 65 123 456">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail adresa</label>
+            <input type="email" id="email" name="email" required placeholder="Unesite Vaš e-mail">
+          </div>
+
+          <div class="form-group">
+            <label for="treatment">Vrsta tretmana</label>
+            <select id="treatment" name="treatment" required>
+              <option value="" disabled selected>Odaberite tretman</option>
+              <option value="fizikalna">Fizikalna terapija</option>
+              <option value="masaža">Masaža</option>
+              <option value="rehabilitacija">Rehabilitacija</option>
+              <option value="savjetovanje">Savjetovanje</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-step step-two animated-element">
+          <h3>2. Odaberite datum i vrijeme</h3>
+
+          <div class="form-group date-selection-group">
+            <label>Odabrani datum</label>
+            <div id="selected-date-display" class="selected-date-display">
+              Kliknite na dan u kalendaru ispod
+            </div>
+
+            <div class="calendar-wrapper">
+              <div class="calendar-header">
+                <button type="button" id="prev-month-btn" class="calendar-nav-btn">&lt;</button>
+                <h4 id="month-year-display"></h4>
+                <button type="button" id="next-month-btn" class="calendar-nav-btn">&gt;</button>
+              </div>
+              <div class="calendar-grid-header" id="calendar-weekdays"></div>
+              <div class="calendar-grid" id="calendar-days"></div>
+            </div>
+          </div>
+
+          <div class="form-group time-selection-group">
+            <label>Odaberite slobodan termin</label>
+            <div id="time-slots" class="time-slots">
+              <p class="initial-prompt">Molimo odaberite datum u kalendaru iznad.</p>
+            </div>
+            <div class="slot-legend">
+              <span class="legend-item"><span class="available-slot-legend"></span> Slobodno</span>
+              <span class="legend-item"><span class="booked-slot-legend"></span> Zauzeto</span>
+              <span class="legend-item"><span class="selected-slot-legend"></span> Vaš odabir</span>
+            </div>
+          </div>
+        </div>
+
+        <input type="hidden" id="hidden-date" name="date" required>
+        <input type="hidden" id="hidden-time" name="time" required>
+        <button type="submit" class="submit-btn" id="booking-submit-btn" disabled>Zakaži termin</button>
+      </form>
+
+      <div id="confirmation" class="confirmation animated-element">
+        ✅ Termin je uspješno zakazan! Uskoro ćete dobiti potvrdu na e-mail.
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="map-section rebuild" id="map">
+    <h2 class="animated-element">Gdje nas pronaći</h2>
+    <div class="map-container animated-element" id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.818306359522!2d17.18951031553554!3d44.77353117909865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472199b005f00001%3A0x8e8e8e8e8e8e8e8e!2sBanja%20Luka!5e0!3m2!1sen!2sba!4v1633024000000!5m2!1sen!2sba"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    <section class="contact-section reveal" id="contact">
+  <div class="contact-card">
+    <h2>Kontakt informacije</h2>
+
+    <div class="contact-info-item">
+      <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+      <div class="info-text">
+        <h4>Adresa</h4>
+        <p>Bulevar Cara Dušana bb<br>78000 Banja Luka</p>
+      </div>
+    </div>
+
+    <div class="contact-info-item">
+      <div class="icon-circle"><i class="fas fa-phone"></i></div>
+      <div class="info-text">
+        <h4>Telefon</h4>
+        <a href="tel:+38765123456">+387 65 123 456</a>
+      </div>
+    </div>
+
+    <div class="contact-info-item">
+      <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+      <div class="info-text">
+        <h4>E-mail</h4>
+        <a href="mailto:info@fiziozen.ba">info@fiziozen.ba</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  </section>
+
+  <div class="web">
+  <a href="https://www.instagram.com/danijelwebstudio/" target="_blank">
+    <img src="images/ig.png" alt="Instagram" class="social-icon">
+    <span>Web by Danijel</span>
+  </a>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer rebuild">
+    <p class="animated-element">© 2025 FizioZen. Sva prava zadržana.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
