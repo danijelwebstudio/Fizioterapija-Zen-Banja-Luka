@@ -1665,8 +1665,6 @@ input:focus, select:focus {
   
 }
 
- /* reduce CTA button sizes on mobile */
-  .cta-button { padding: .6rem .9rem; font-size: .95rem; }
 
 
 
@@ -1866,7 +1864,9 @@ input:focus, select:focus {
     opacity: 1;
     transform: translateY(0);
   }
+  
 }
+
 
 
 
@@ -1931,6 +1931,9 @@ input:focus, select:focus {
         margin: 2rem 1rem;
         padding: 2rem;
     }
+
+    /* reduce CTA button sizes on mobile */
+  .cta-button { padding: .6rem .9rem; font-size: .95rem; }
 
     .form-group-grid {
         grid-template-columns: 1fr; /* Stack inputs on small screens */
